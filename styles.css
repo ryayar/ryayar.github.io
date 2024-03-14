@@ -41,24 +41,30 @@ ul li {
 }
 
 .python, .vue, .nuxt, .react {
-  background-size: 15px;
+  list-style: none;
+}
+
+.python:before, .vue:before, .nuxt:before, .react:before {
+  content: '';
+  display: inline-block;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: left;
-  list-style: outside;
+  width: 20px;
+  height: 20px;
 }
 
-.python {
-  list-style: url("./img/python.svg");
+.python:before {
+  background-image: url("./img/python.svg");
 }
 
-.vue {
-  list-style: url("./img/vue.svg");
+.vue:before {
+  background-image: url("./img/vue.svg");
 }
 
-.nuxt {
-  list-style: url("./img/nuxt.svg");
+.nuxt:before {
+  background-image: url("./img/nuxt.svg");
 }
 
-.react {
-  list-style: url("./img/react.svg");
+.react:before {
+  background-image: url("./img/react.svg");
 }
